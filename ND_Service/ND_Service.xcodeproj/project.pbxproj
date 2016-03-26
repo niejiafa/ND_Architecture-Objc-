@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D44484C1CA658D60030933F /* ND_Service.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D44484B1CA658D60030933F /* ND_Service.h */; };
-		7D44484E1CA658D60030933F /* ND_Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44484D1CA658D60030933F /* ND_Service.m */; };
+		7D44488E1CA665470030933F /* NDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448791CA665470030933F /* NDModel.m */; };
+		7D44488F1CA665470030933F /* NSArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44487D1CA665470030933F /* NSArray+ND.m */; };
+		7D4448901CA665470030933F /* NSData+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44487F1CA665470030933F /* NSData+ND.m */; };
+		7D4448911CA665470030933F /* NSDate+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448811CA665470030933F /* NSDate+ND.m */; };
+		7D4448921CA665470030933F /* NSDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448831CA665470030933F /* NSDictionary+ND.m */; };
+		7D4448931CA665470030933F /* NSFileManager+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448851CA665470030933F /* NSFileManager+ND.m */; };
+		7D4448941CA665470030933F /* NSMutableArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448871CA665470030933F /* NSMutableArray+ND.m */; };
+		7D4448951CA665470030933F /* NSMutableDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448891CA665470030933F /* NSMutableDictionary+ND.m */; };
+		7D4448961CA665470030933F /* NSString+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44488B1CA665470030933F /* NSString+ND.m */; };
+		7D4448971CA665470030933F /* NSTimer+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44488D1CA665470030933F /* NSTimer+ND.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +26,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				7D44484C1CA658D60030933F /* ND_Service.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +33,26 @@
 
 /* Begin PBXFileReference section */
 		7D4448481CA658D60030933F /* libND_Service.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libND_Service.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D44484B1CA658D60030933F /* ND_Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ND_Service.h; sourceTree = "<group>"; };
-		7D44484D1CA658D60030933F /* ND_Service.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ND_Service.m; sourceTree = "<group>"; };
+		7D4448751CA665470030933F /* NDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDModel.h; sourceTree = "<group>"; };
+		7D4448791CA665470030933F /* NDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDModel.m; sourceTree = "<group>"; };
+		7D44487C1CA665470030933F /* NSArray+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ND.h"; sourceTree = "<group>"; };
+		7D44487D1CA665470030933F /* NSArray+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ND.m"; sourceTree = "<group>"; };
+		7D44487E1CA665470030933F /* NSData+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ND.h"; sourceTree = "<group>"; };
+		7D44487F1CA665470030933F /* NSData+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ND.m"; sourceTree = "<group>"; };
+		7D4448801CA665470030933F /* NSDate+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ND.h"; sourceTree = "<group>"; };
+		7D4448811CA665470030933F /* NSDate+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ND.m"; sourceTree = "<group>"; };
+		7D4448821CA665470030933F /* NSDictionary+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ND.h"; sourceTree = "<group>"; };
+		7D4448831CA665470030933F /* NSDictionary+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ND.m"; sourceTree = "<group>"; };
+		7D4448841CA665470030933F /* NSFileManager+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ND.h"; sourceTree = "<group>"; };
+		7D4448851CA665470030933F /* NSFileManager+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ND.m"; sourceTree = "<group>"; };
+		7D4448861CA665470030933F /* NSMutableArray+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ND.h"; sourceTree = "<group>"; };
+		7D4448871CA665470030933F /* NSMutableArray+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ND.m"; sourceTree = "<group>"; };
+		7D4448881CA665470030933F /* NSMutableDictionary+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ND.h"; sourceTree = "<group>"; };
+		7D4448891CA665470030933F /* NSMutableDictionary+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ND.m"; sourceTree = "<group>"; };
+		7D44488A1CA665470030933F /* NSString+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ND.h"; sourceTree = "<group>"; };
+		7D44488B1CA665470030933F /* NSString+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ND.m"; sourceTree = "<group>"; };
+		7D44488C1CA665470030933F /* NSTimer+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+ND.h"; sourceTree = "<group>"; };
+		7D44488D1CA665470030933F /* NSTimer+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+ND.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +85,92 @@
 		7D44484A1CA658D60030933F /* ND_Service */ = {
 			isa = PBXGroup;
 			children = (
-				7D44484B1CA658D60030933F /* ND_Service.h */,
-				7D44484D1CA658D60030933F /* ND_Service.m */,
+				7D4448721CA665470030933F /* Include */,
+				7D4448761CA665470030933F /* Src */,
 			);
 			path = ND_Service;
+			sourceTree = "<group>";
+		};
+		7D4448721CA665470030933F /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448731CA665470030933F /* Tool */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		7D4448731CA665470030933F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448741CA665470030933F /* Model */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7D4448741CA665470030933F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448751CA665470030933F /* NDModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D4448761CA665470030933F /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448771CA665470030933F /* Tool */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		7D4448771CA665470030933F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448781CA665470030933F /* Model */,
+				7D44487A1CA665470030933F /* Network */,
+				7D44487B1CA665470030933F /* SystemCategory */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7D4448781CA665470030933F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448791CA665470030933F /* NDModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D44487A1CA665470030933F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7D44487B1CA665470030933F /* SystemCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7D44487C1CA665470030933F /* NSArray+ND.h */,
+				7D44487D1CA665470030933F /* NSArray+ND.m */,
+				7D44487E1CA665470030933F /* NSData+ND.h */,
+				7D44487F1CA665470030933F /* NSData+ND.m */,
+				7D4448801CA665470030933F /* NSDate+ND.h */,
+				7D4448811CA665470030933F /* NSDate+ND.m */,
+				7D4448821CA665470030933F /* NSDictionary+ND.h */,
+				7D4448831CA665470030933F /* NSDictionary+ND.m */,
+				7D4448841CA665470030933F /* NSFileManager+ND.h */,
+				7D4448851CA665470030933F /* NSFileManager+ND.m */,
+				7D4448861CA665470030933F /* NSMutableArray+ND.h */,
+				7D4448871CA665470030933F /* NSMutableArray+ND.m */,
+				7D4448881CA665470030933F /* NSMutableDictionary+ND.h */,
+				7D4448891CA665470030933F /* NSMutableDictionary+ND.m */,
+				7D44488A1CA665470030933F /* NSString+ND.h */,
+				7D44488B1CA665470030933F /* NSString+ND.m */,
+				7D44488C1CA665470030933F /* NSTimer+ND.h */,
+				7D44488D1CA665470030933F /* NSTimer+ND.m */,
+			);
+			path = SystemCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D44484E1CA658D60030933F /* ND_Service.m in Sources */,
+				7D4448931CA665470030933F /* NSFileManager+ND.m in Sources */,
+				7D4448961CA665470030933F /* NSString+ND.m in Sources */,
+				7D4448951CA665470030933F /* NSMutableDictionary+ND.m in Sources */,
+				7D44488F1CA665470030933F /* NSArray+ND.m in Sources */,
+				7D4448901CA665470030933F /* NSData+ND.m in Sources */,
+				7D4448941CA665470030933F /* NSMutableArray+ND.m in Sources */,
+				7D4448971CA665470030933F /* NSTimer+ND.m in Sources */,
+				7D4448911CA665470030933F /* NSDate+ND.m in Sources */,
+				7D4448921CA665470030933F /* NSDictionary+ND.m in Sources */,
+				7D44488E1CA665470030933F /* NDModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +330,7 @@
 		7D4448521CA658D60030933F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "../Pods/Headers/Public/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -223,6 +340,7 @@
 		7D4448531CA658D60030933F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "../Pods/Headers/Public/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -248,6 +366,7 @@
 				7D4448531CA658D60030933F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

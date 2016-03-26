@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 
-#import "ND_Service.h"
-
 @interface ViewController ()
 
 @end
@@ -18,8 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ND_Service *service = [[ND_Service alloc] init];
-    NSLog(@"%@",service);
 }
 
 - (void)didReceiveMemoryWarning {
