@@ -17,6 +17,9 @@
 		7D4448951CA665470030933F /* NSMutableDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448891CA665470030933F /* NSMutableDictionary+ND.m */; };
 		7D4448961CA665470030933F /* NSString+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44488B1CA665470030933F /* NSString+ND.m */; };
 		7D4448971CA665470030933F /* NSTimer+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44488D1CA665470030933F /* NSTimer+ND.m */; };
+		7D705FD81CA68427008CF0C5 /* NDFeatureSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D705FD71CA68427008CF0C5 /* NDFeatureSet.m */; };
+		7D705FDE1CA6886E008CF0C5 /* NDBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D705FDD1CA6886E008CF0C5 /* NDBaseRequest.m */; };
+		7D705FE01CA696F2008CF0C5 /* NDService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D705FDF1CA696F2008CF0C5 /* NDService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +56,12 @@
 		7D44488B1CA665470030933F /* NSString+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ND.m"; sourceTree = "<group>"; };
 		7D44488C1CA665470030933F /* NSTimer+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+ND.h"; sourceTree = "<group>"; };
 		7D44488D1CA665470030933F /* NSTimer+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+ND.m"; sourceTree = "<group>"; };
+		7D4449531CA67EA60030933F /* NDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDService.h; sourceTree = "<group>"; };
+		7D705FD61CA68427008CF0C5 /* NDFeatureSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDFeatureSet.h; sourceTree = "<group>"; };
+		7D705FD71CA68427008CF0C5 /* NDFeatureSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDFeatureSet.m; sourceTree = "<group>"; };
+		7D705FDC1CA6886E008CF0C5 /* NDBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDBaseRequest.h; sourceTree = "<group>"; };
+		7D705FDD1CA6886E008CF0C5 /* NDBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDBaseRequest.m; sourceTree = "<group>"; };
+		7D705FDF1CA696F2008CF0C5 /* NDService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,7 @@
 		7D4448721CA665470030933F /* Include */ = {
 			isa = PBXGroup;
 			children = (
+				7D44493A1CA67E360030933F /* ServiceFactory */,
 				7D4448731CA665470030933F /* Tool */,
 			);
 			path = Include;
@@ -118,6 +128,7 @@
 		7D4448761CA665470030933F /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				7D4449421CA67E3E0030933F /* ServiceFactory */,
 				7D4448771CA665470030933F /* Tool */,
 			);
 			path = Src;
@@ -144,6 +155,8 @@
 		7D44487A1CA665470030933F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7D705FDC1CA6886E008CF0C5 /* NDBaseRequest.h */,
+				7D705FDD1CA6886E008CF0C5 /* NDBaseRequest.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -171,6 +184,48 @@
 				7D44488D1CA665470030933F /* NSTimer+ND.m */,
 			);
 			path = SystemCategory;
+			sourceTree = "<group>";
+		};
+		7D44493A1CA67E360030933F /* ServiceFactory */ = {
+			isa = PBXGroup;
+			children = (
+				7D44493D1CA67E360030933F /* Service */,
+			);
+			path = ServiceFactory;
+			sourceTree = "<group>";
+		};
+		7D44493D1CA67E360030933F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7D4449531CA67EA60030933F /* NDService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7D4449421CA67E3E0030933F /* ServiceFactory */ = {
+			isa = PBXGroup;
+			children = (
+				7D4449431CA67E3E0030933F /* FeatureSet */,
+				7D4449481CA67E3E0030933F /* Service */,
+			);
+			path = ServiceFactory;
+			sourceTree = "<group>";
+		};
+		7D4449431CA67E3E0030933F /* FeatureSet */ = {
+			isa = PBXGroup;
+			children = (
+				7D705FD61CA68427008CF0C5 /* NDFeatureSet.h */,
+				7D705FD71CA68427008CF0C5 /* NDFeatureSet.m */,
+			);
+			path = FeatureSet;
+			sourceTree = "<group>";
+		};
+		7D4449481CA67E3E0030933F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7D705FDF1CA696F2008CF0C5 /* NDService.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,13 +286,16 @@
 			files = (
 				7D4448931CA665470030933F /* NSFileManager+ND.m in Sources */,
 				7D4448961CA665470030933F /* NSString+ND.m in Sources */,
+				7D705FD81CA68427008CF0C5 /* NDFeatureSet.m in Sources */,
 				7D4448951CA665470030933F /* NSMutableDictionary+ND.m in Sources */,
 				7D44488F1CA665470030933F /* NSArray+ND.m in Sources */,
 				7D4448901CA665470030933F /* NSData+ND.m in Sources */,
 				7D4448941CA665470030933F /* NSMutableArray+ND.m in Sources */,
 				7D4448971CA665470030933F /* NSTimer+ND.m in Sources */,
 				7D4448911CA665470030933F /* NSDate+ND.m in Sources */,
+				7D705FDE1CA6886E008CF0C5 /* NDBaseRequest.m in Sources */,
 				7D4448921CA665470030933F /* NSDictionary+ND.m in Sources */,
+				7D705FE01CA696F2008CF0C5 /* NDService.m in Sources */,
 				7D44488E1CA665470030933F /* NDModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
