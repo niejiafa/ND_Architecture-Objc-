@@ -12,4 +12,9 @@
 
 + (instancetype)sharedServiceFactory;
 
+- (id)serviceWithServiceName:(NSString *)serviceName;
+
+- (void)unloadServiceWithServiceName:(NSString *)serviceName;
+- (void)unloadServiceWithServiceName:(NSString *)serviceName isForceUnload:(BOOL)isForceUnload;
+
 @end
