@@ -10,4 +10,6 @@
 
 @interface WeatherListModel : NDModel
 
+@property (nonatomic, copy) NSString *weatherDescription;
+
 @end

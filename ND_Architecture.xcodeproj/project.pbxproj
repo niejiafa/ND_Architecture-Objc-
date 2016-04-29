@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		7D44481C1CA658060030933F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44481B1CA658060030933F /* main.m */; };
 		7D44481F1CA658060030933F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44481E1CA658060030933F /* AppDelegate.m */; };
-		7D4448221CA658060030933F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448211CA658060030933F /* ViewController.m */; };
 		7D4448251CA658060030933F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4448231CA658060030933F /* Main.storyboard */; };
 		7D4448271CA658060030933F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4448261CA658060030933F /* Assets.xcassets */; };
 		7D44482A1CA658060030933F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4448281CA658060030933F /* LaunchScreen.storyboard */; };
 		7D4448351CA658070030933F /* ND_ArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448341CA658070030933F /* ND_ArchitectureTests.m */; };
 		7D44486A1CA65DD80030933F /* libND_Service.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4448691CA65DD80030933F /* libND_Service.a */; };
 		7D44486C1CA65DDD0030933F /* libND_Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D44486B1CA65DDD0030933F /* libND_Common.a */; };
+		7DAA01691CD3067C00B818D3 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA01681CD3067C00B818D3 /* WeatherViewController.m */; };
+		7DAA016C1CD3079400B818D3 /* NDLoctionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA016B1CD3079400B818D3 /* NDLoctionCenter.m */; };
+		7DAA016F1CD30C3900B818D3 /* WeatherPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA016E1CD30C3900B818D3 /* WeatherPresenter.m */; };
 		B552A3DD8FBE7A6FB70EC717 /* libPods-ND_Architecture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E758F42C81D9913A05F020C5 /* libPods-ND_Architecture.a */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +36,6 @@
 		7D44481B1CA658060030933F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7D44481D1CA658060030933F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7D44481E1CA658060030933F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7D4448201CA658060030933F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7D4448211CA658060030933F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7D4448241CA658060030933F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D4448261CA658060030933F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D4448291CA658060030933F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +45,12 @@
 		7D4448361CA658070030933F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D4448691CA65DD80030933F /* libND_Service.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libND_Service.a; path = "ND_Service/build/Debug-iphoneos/libND_Service.a"; sourceTree = "<group>"; };
 		7D44486B1CA65DDD0030933F /* libND_Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libND_Common.a; path = "ND_Common/build/Debug-iphoneos/libND_Common.a"; sourceTree = "<group>"; };
+		7DAA01671CD3067C00B818D3 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		7DAA01681CD3067C00B818D3 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		7DAA016A1CD3079400B818D3 /* NDLoctionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDLoctionCenter.h; sourceTree = "<group>"; };
+		7DAA016B1CD3079400B818D3 /* NDLoctionCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDLoctionCenter.m; sourceTree = "<group>"; };
+		7DAA016D1CD30C3900B818D3 /* WeatherPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherPresenter.h; sourceTree = "<group>"; };
+		7DAA016E1CD30C3900B818D3 /* WeatherPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherPresenter.m; sourceTree = "<group>"; };
 		D729F6527FF1F4C0D3239473 /* Pods-ND_Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ND_Architecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-ND_Architecture/Pods-ND_Architecture.release.xcconfig"; sourceTree = "<group>"; };
 		E062A08725032375BBE1E2BB /* Pods-ND_Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ND_Architecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ND_Architecture/Pods-ND_Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 		E758F42C81D9913A05F020C5 /* libPods-ND_Architecture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ND_Architecture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,12 +102,8 @@
 			children = (
 				7D44481D1CA658060030933F /* AppDelegate.h */,
 				7D44481E1CA658060030933F /* AppDelegate.m */,
-				7D4448201CA658060030933F /* ViewController.h */,
-				7D4448211CA658060030933F /* ViewController.m */,
-				7D4448231CA658060030933F /* Main.storyboard */,
-				7D4448261CA658060030933F /* Assets.xcassets */,
-				7D4448281CA658060030933F /* LaunchScreen.storyboard */,
-				7D44482B1CA658060030933F /* Info.plist */,
+				7DAA01511CD305E400B818D3 /* Location */,
+				7DAA01521CD305E400B818D3 /* WeatherDemo */,
 				7D44481A1CA658060030933F /* Supporting Files */,
 			);
 			path = ND_Architecture;
@@ -110,6 +112,10 @@
 		7D44481A1CA658060030933F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7D4448231CA658060030933F /* Main.storyboard */,
+				7D4448261CA658060030933F /* Assets.xcassets */,
+				7D4448281CA658060030933F /* LaunchScreen.storyboard */,
+				7D44482B1CA658060030933F /* Info.plist */,
 				7D44481B1CA658060030933F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -122,6 +128,66 @@
 				7D4448361CA658070030933F /* Info.plist */,
 			);
 			path = ND_ArchitectureTests;
+			sourceTree = "<group>";
+		};
+		7DAA01511CD305E400B818D3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA016A1CD3079400B818D3 /* NDLoctionCenter.h */,
+				7DAA016B1CD3079400B818D3 /* NDLoctionCenter.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		7DAA01521CD305E400B818D3 /* WeatherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA015F1CD3064D00B818D3 /* Model */,
+				7DAA01621CD3064D00B818D3 /* Presenter */,
+				7DAA01631CD3064D00B818D3 /* View */,
+			);
+			path = WeatherDemo;
+			sourceTree = "<group>";
+		};
+		7DAA015F1CD3064D00B818D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DAA01621CD3064D00B818D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA016D1CD30C3900B818D3 /* WeatherPresenter.h */,
+				7DAA016E1CD30C3900B818D3 /* WeatherPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7DAA01631CD3064D00B818D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA01641CD3064D00B818D3 /* View */,
+				7DAA01651CD3064D00B818D3 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DAA01641CD3064D00B818D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DAA01651CD3064D00B818D3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA01671CD3067C00B818D3 /* WeatherViewController.h */,
+				7DAA01681CD3067C00B818D3 /* WeatherViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		DB555E553C763ADC10AB7803 /* Pods */ = {
@@ -294,9 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4448221CA658060030933F /* ViewController.m in Sources */,
 				7D44481F1CA658060030933F /* AppDelegate.m in Sources */,
+				7DAA01691CD3067C00B818D3 /* WeatherViewController.m in Sources */,
 				7D44481C1CA658060030933F /* main.m in Sources */,
+				7DAA016F1CD30C3900B818D3 /* WeatherPresenter.m in Sources */,
+				7DAA016C1CD3079400B818D3 /* NDLoctionCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,12 +507,8 @@
 				);
 				INFOPLIST_FILE = ND_Architecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ND_Service/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/ND_Common/build/Debug-iphoneos",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.education.nd.ND-Architecture";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pingan.ND-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -466,12 +530,8 @@
 				);
 				INFOPLIST_FILE = ND_Architecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ND_Service/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/ND_Common/build/Debug-iphoneos",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.education.nd.ND-Architecture";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pingan.ND-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
