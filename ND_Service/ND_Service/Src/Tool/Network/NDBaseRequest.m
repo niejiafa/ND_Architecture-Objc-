@@ -59,6 +59,12 @@
     }
 }
 
+- (void)requestFailedFilter
+{
+    
+    
+}
+
 #pragma mark - public
 
 - (id)cacheModel
