@@ -20,10 +20,10 @@
 
 - (void)start {
     
-    self.locationManager          = [[CLLocationManager alloc] init];
+    self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     
-    // 检测是否为 iOS8.0
+    /// 检测是否为 iOS8.0
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)])
     {
         [self.locationManager requestWhenInUseAuthorization];
@@ -47,11 +47,8 @@
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
-    NSLog(@"定位失败");
-    
     if ([CLLocationManager locationServicesEnabled] == NO)
     {
-        NSLog(@"定位功能关闭");
         if (self.delegate && [self.delegate respondsToSelector:@selector(loctionCenterServerClosed:)])
         {
             [self.delegate loctionCenterServerClosed:self];
@@ -60,7 +57,6 @@
     }
     else
     {
-        NSLog(@"定位功能开启");
         if (self.delegate && [self.delegate respondsToSelector:@selector(loctionCenter:didFailed:)])
         {
             NSLog(@"%@", error);
