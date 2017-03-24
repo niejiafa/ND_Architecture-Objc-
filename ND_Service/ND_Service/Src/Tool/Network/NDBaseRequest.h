@@ -6,59 +6,59 @@
 //  Copyright © 2016年 NDEducation. All rights reserved.
 //
 
-#import "YTKBaseRequest.h"
+#import "YTKRequest.h"
 
-@interface NDBaseRequest : YTKBaseRequest
+@interface NDBaseRequest : YTKRequest
 
- ///请求方式
+ /// 请求方式
 @property (nonatomic, assign) YTKRequestMethod requestMethodType;
 
- ///保存缓存至内存缓存
+ /// 保存缓存至内存缓存
 @property (nonatomic, assign) BOOL isSaveToMemory;
 
- ///保存缓存至磁盘缓存
+ /// 保存缓存至磁盘缓存
 @property (nonatomic, assign) BOOL isSaveToDisk;
 
- ///用户缓存数据文件夹
+ /// 用户缓存数据文件夹
 @property (nonatomic, copy) NSString *userCacheDirectory;
 
- ///若为公用资源，需设置为空，默认为不同用户资源
+ /// 若为公用资源，需设置为空，默认为不同用户资源
 @property (nonatomic, copy) NSString *sensitiveDataForSavedFileName;
 
- ///模型
+ /// 模型
 @property (nonatomic, strong) Class modelClass;
 
- ///增量更新
+ /// 增量更新
 @property (nonatomic, copy) id (^operation)(id newObject, id oldObject);
 
- ///请求成功回调
+ /// 请求成功回调
 @property (nonatomic, copy) void (^networkSuccessResponse)(id object, id otherInfo);
 
-///请求失败回调
+/// 请求失败回调
 @property (nonatomic, copy) void (^networkFailResponse)(id error, id otherInfo);
 
-///缓存
+/// 缓存
 - (id)cacheModel;
 
-///最新请求的模型
+/// 最新请求的模型
 - (id)currentResponseModel;
 
-///保存缓存至内存
+/// 保存缓存至内存
 - (void)saveObjectToMemory:(id)object;
 
-///保存缓存至磁盘
+/// 保存缓存至磁盘
 - (BOOL)saveObjectToDiskCache:(id)object;
 
-///磁盘中是否有缓存
+/// 磁盘中是否有缓存
 - (BOOL)haveDiskCache;
 
-///移除内存中的缓存
+/// 移除内存中的缓存
 - (void)removeMemoryCache;
 
-///移除磁盘中的缓存
+/// 移除磁盘中的缓存
 - (void)removeDiskCache;
 
-///移除所有缓存
+/// 移除所有缓存
 - (void)removeAllCache;
 
 /**
